@@ -1,16 +1,13 @@
 import { useRef, useState } from "react";
 
 export default function Player() {
-
-  //to get val entered in input field
   const playerName = useRef();
-
   const [userName, setUserName] = useState("unknown entity");
-  // var name = "unknown entity";
+  // let userName = "unknown entity";
 
   const handleClick = () => {
-    // setUserName(name);
     setUserName(playerName.current.value);
+    // userName = playerName.current.value;
   }
 
 
@@ -24,6 +21,3 @@ export default function Player() {
     </section>
   );
 }
-
-// 1. store the input
-// 2. when button clicked, take the stored input and add in h2
